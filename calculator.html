@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JS is Fun!</title>
+  <style>
+    body {
+      width: 800px;
+      margin: 0 auto;
+      background-color: hotpink;
+      background-image: url("1266026.jpg");
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+    #result {
+      font-size: 200%;
+      font-weight: bold;
+      color: cadetblue;
+    }
+    #result, #calculateForm {
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ddd;
+    }
+    h1 {
+      color: burlywood;
+    }
+
+  </style>
+</head>
+<body>
+
+  <h1>Contra-Calculator! No TERFs!!</h1>
+
+  <form id="calculateForm">
+    <input id="num1">
+        <button type="button" id="+" onclick=doCalculation("HighFem");>HighFem</button>
+        <button type="button" id="-" onclick=doCalculation("TERFs");>TERFs</button>
+        <button type="button" id="*" onclick=doCalculation("Bonus-Lindsey-Elis");>Bonus Lindsey Elis</button>
+        <button type="button" id="/" onclick=doCalculation("Eric");>Eric</button>
+        <button type="button" id="sqrt" onclick=doCalculation("Philosophy-Tube-collab");>Philosophy Tube collab</button>
+    <input id="num2">
+  </form>
+
+  <div id="result"></div>
+
+
+  <script type="text/javascript">
+  function doCalculation(op){
+      let x = parseInt(document.getElementById("num1").value);
+      let y = parseInt(document.getElementById("num2").value);
+      let result = 0
+
+      if (op === "Eric" && y === 0){result = "Undefined"}
+      else if (op === "HighFem"){result = x + y}
+      else if (op === "TERFs"){result = x - y}
+      else if (op === "Bonus-Lindsey-Elis"){result = x * y}
+      else if (op === "Eric"){result = x / y}
+      else {result = null}
+
+     document.getElementById("result").innerHTML = result;
+  }
+  </script>
+
+</body>
+</html>
